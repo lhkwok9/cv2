@@ -3,12 +3,12 @@
 ## Setup Guidelines before installation<br/>
 
 ### EEPROM<br/>
-The Raspberry Pi 4 is also partially booted from two EEPROMs. These EEPROMs are programmed after PCB assembly in the factory. 
-The Raspberry Pi foundation has recently released new and improved software for these EEPROMs. 
-This nothing to do with OpenCV, but all the more with heat dissipation. 
-In one of Qengineering vision applications, the heat of the CPU drops from 65 °C (149 °F) to 48 °C (118 °F) simply by updating the EEPROMs contents. 
+The Raspberry Pi 4 is also partially booted from two EEPROMs. These EEPROMs are programmed after PCB assembly in the factory. <br/>
+The Raspberry Pi foundation has recently released new and improved software for these EEPROMs. <br/>
+This nothing to do with OpenCV, but all the more with heat dissipation. <br/>
+In one of Qengineering vision applications, the heat of the CPU drops from 65 °C (149 °F) to 48 °C (118 °F) simply by updating the EEPROMs contents. <br/>
 And, as you know, a low CPU temperature will prolong your Pi lifespan. For more information see this [article]( https://www.hackster.io/news/raspberry-pi-4-firmware-updates-tested-a-deep-dive-into-thermal-performance-and-optimization-2f22c78e7089 )
-.
+.<br/>
 Check, and if needed update, the EEPROMs with the following commands. The screen dumps speak for there self.
 - Get the current status
 ```
@@ -23,7 +23,7 @@ sudo rpi-eeprom-update -a
 ------------
 
 ### Version Check<br/>
-Do you have the 32-bit version, armv7l, please continue.
+- Do you have the 32-bit version, armv7l, please continue.
 ```
 uname -a
 ```
@@ -46,14 +46,14 @@ sudo /etc/init.d/dphys-swapfile restart swapon -s
 ------------
 
 ### Operating System<br/>
-The Raspberry Pi 4 has a 76 Mbyte GPU memory size. It can be somewhat small for vision projects, better to change this now to a 128 Mbyte. To increase the amount of memory for the GPU, use the following menu.
+The Raspberry Pi 4 has a 76 Mbyte GPU memory size. It can be somewhat small for vision projects, better to change this now to a 128 Mbyte. To increase the amount of memory for the GPU, use the following menu.<br/>
 ![output image]( https://qengineering.eu/images/Raspi_Configuration_v3xvndqr.webp )
 ![output image]( https://qengineering.eu/images/Raspi_Configuration_2_7eh7npud.webp )
 
 ------------
 
 ### Reboot
-Reboot to apply the changes above
+- Reboot to apply the changes above
 ```
 sudo reboot
 ```
